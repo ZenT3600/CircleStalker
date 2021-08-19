@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Circle Stalker</string>
+    <string name="app_description">Stalk your osu! friends profiles with ease</string>
+    <string name="api_key_preference">api_key</string>
+    <string name="mode_preference">mode</string>
+    <string name="recent_events_preference">recent_events</string>
+    <string name="api_input_title">Enter your osu!API v1 key</string>
+    <string name="api_input_subtitle">Press the GET button if you do not have one yet. This page will disappear once you enter a valid key</string>
+    <string name="api_key_error">The given API v1 key is invalid, please try again</string>
+    <string name="fetching">[FETCHING DATA]</string>
+    <string name="api_call_time_preference">api_call_time</string>
+    <string name="score_time_preference">score_time</string>
+    <string name="users_to_check_preference">users_to_check</string>
+    <string name="failed_score_preference">failed_score</string>
+    <string name="scoreposting_preference">scoreposting</string>
+</resources>

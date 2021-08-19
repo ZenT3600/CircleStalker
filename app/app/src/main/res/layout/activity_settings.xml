@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Settings"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/settings_apikey_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="API Key"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/settings_apikey_input"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:hint="API Key"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:password="true"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="md"
+            tools:text="@tools:sample/us_phones" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/settings_mode_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Mode"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <RadioGroup
+            android:id="@+id/settings_mode_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/settings_mode_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="osu!" />
+
+            <RadioButton
+                android:id="@+id/settings_mode_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="osu!taiko" />
+
+            <RadioButton
+                android:id="@+id/settings_mode_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="osu!ctb" />
+
+            <RadioButton
+                android:id="@+id/settings_mode_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="osu!mania" />
+
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/settings_failed_titile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Show Failed Scores"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <CheckBox
+            android:id="@+id/settings_failed_box"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/settings_scoreposting_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Generate ScorePosting Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <CheckBox
+            android:id="@+id/settings_scoreposting_box"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:id="@+id/settings_eventnum_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="(N) Most Recent Events"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/settings_eventnum_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            tools:text="@tools:sample/us_zipcodes" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+        <TextView
+            android:id="@+id/settings_apicalltime_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Time Between API Calls (Seconds)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <SeekBar
+            android:id="@+id/settings_apicalltime_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="60" />
+
+        <TextView
+            android:id="@+id/settings_apicalltime_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+        <TextView
+            android:id="@+id/settings_servicetime_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Time Between Checking Scores (Minutes)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <SeekBar
+            android:id="@+id/settings_servicetime_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="60" />
+
+        <TextView
+            android:id="@+id/settings_servicetime_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+        <Button
+            android:id="@+id/settings_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+</ScrollView>

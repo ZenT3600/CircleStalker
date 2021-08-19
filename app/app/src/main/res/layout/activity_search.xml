@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/subscribe_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wait..."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23dp" />
+
+        <ImageView
+            android:id="@+id/pfp_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/global_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/local_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/count_ssh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8064B5F6"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#A8A8A8" />
+
+        <TextView
+            android:id="@+id/count_ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8064B5F6"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFD54F" />
+
+        <TextView
+            android:id="@+id/count_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8064B5F6"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#A3A3A3" />
+
+        <TextView
+            android:id="@+id/count_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8064B5F6"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#FFD54F" />
+
+        <TextView
+            android:id="@+id/count_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8064DD17"
+            android:gravity="center"
+            android:text="@string/fetching"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#5C714E" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="39dp" />
+
+        <TextView
+            android:id="@+id/events_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Events"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <LinearLayout
+            android:id="@+id/events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+    </LinearLayout>
+
+</ScrollView>
