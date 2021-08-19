@@ -1,13 +1,12 @@
 ## Circle Stalker
 > by u/ZenT3600
 
-![Preview Image 1](1.png)
-
-![Preview Image 2](2.png)
-
-![Preview Image 3](3.png)
-
-![Preview Image 4](4.png)
+<p float="left">
+  <img src="/1.png" width="20%"/>
+  <img src="/2.png" width="20%"/> 
+  <img src="/3.png" width="20%"/>
+  <img src="/4.png" width="20%"/>
+</p>
 
 ---
 
